@@ -35,7 +35,7 @@ export default function About() {
               priority
             />
 
-            {/* Doodles overlay on the photo */}
+            {/* Doodles overlay on the photoooo */}
             <div className="absolute inset-0 -top-6 pointer-events-none">
               <Image
                 src="/extra.png"
