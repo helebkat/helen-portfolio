@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { inter, allison, darumadrop } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "Helen Li — Portfolio",
+  title: "Helen Li",
   description: "N/A",
 };
 
