@@ -1,23 +1,26 @@
 // app/resume/page.tsx
 import Image from "next/image";
+import Link from "next/link";
 import { allison, darumadrop } from "../fonts";
 
 export default function Resume() {
   return (
     <main className="relative min-h-dvh overflow-hidden" style={{ backgroundColor: '#B0C09D' }}>
       {/* Home icon in top left corner (always visible) */}
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20
-                sm:top-6 sm:left-6 sm:translate-x-0">
-        <a href="/" className="block hover:rotate-12 transition-transform duration-300">
+      <div
+        className="absolute top-4 left-1/2 -translate-x-1/2 z-20
+                   sm:top-6 sm:left-6 sm:translate-x-0"
+      >
+        <Link href="/" className="block hover:rotate-12 transition-transform duration-300">
           <Image
-            src="/flower home.png"   // assuming your filenames are correct
+            src="/flower home.png"
             alt="Home"
             width={60}
             height={60}
             className="h-auto w-[100px]"
             priority
           />
-        </a>
+        </Link>
       </div>
 
       {/* Star doodle in top right (hidden on mobile) */}

@@ -1,7 +1,22 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+const repo = "helen-portfolio"; // ← your GitHub repo name
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Export a static site to /out so it can be hosted on GitHub Pages
+  output: "export",
+
+  // GitHub Pages can't run Next's Image Optimization
+  images: { unoptimized: true },
+
+  // Serve under /<repo> in production (required for GitHub Pages on a project repo)
+  basePath: isProd ? `/${repo}` : "",
+  assetPrefix: isProd ? `/${repo}/` : "",
+
+  // If you still hit lint build-blockers, you can temporarily uncomment:
+  // eslint: { ignoreDuringBuilds: true },
 };
 
 export default nextConfig;

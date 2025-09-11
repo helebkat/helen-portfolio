@@ -1,5 +1,6 @@
 // app/page.tsx
 import Image from "next/image";
+import Link from "next/link";
 import { allison, darumadrop } from "./fonts";
 
 export default function Home() {
@@ -11,10 +12,10 @@ export default function Home() {
           className={`${allison.className} mx-auto flex max-w-7xl items-center justify-center gap-15 text-white/95`}
           style={{ fontSize: 'clamp(28px, 4vw, 60px)' }}
         >
-          <a href="/about" className="hover:opacity-90">About</a>
-          <a href="/resume" className="hover:opacity-90">Resume</a>
-          <a href="/projects" className="hover:opacity-90">Projects</a>
-          <a href="/hobbies" className="hover:opacity-90">Hobbies</a>
+          <Link href="/about" className="hover:opacity-90">About</Link>
+          <Link href="/resume" className="hover:opacity-90">Resume</Link>
+          <Link href="/projects" className="hover:opacity-90">Projects</Link>
+          <Link href="/hobbies" className="hover:opacity-90">Hobbies</Link>
         </nav>
       </header>
 
