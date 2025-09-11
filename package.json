@@ -1,12 +1,15 @@
 {
   "name": "helen-portfolio",
+  "homepage": "https://helebkat.github.io/helen-portfolio/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "next": "15.5.2",
@@ -25,4 +28,7 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
+
 }
+
+
