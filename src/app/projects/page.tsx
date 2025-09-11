@@ -1,14 +1,17 @@
 // app/projects/page.tsx
 import Image from "next/image";
+import Link from "next/link";
 import { allison, darumadrop } from "../fonts";
 
 export default function Projects() {
   return (
     <main className="relative min-h-dvh overflow-hidden" style={{ backgroundColor: '#EFEBE0' }}>
       {/* Home icon in top left corner (always visible) */}
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20
-                sm:top-6 sm:left-6 sm:translate-x-0">
-        <a href="/" className="block hover:rotate-12 transition-transform duration-300">
+      <div
+        className="absolute top-4 left-1/2 -translate-x-1/2 z-20
+                   sm:top-6 sm:left-6 sm:translate-x-0"
+      >
+        <Link href="/" className="block hover:rotate-12 transition-transform duration-300">
           <Image
             src="/flower home.png"
             alt="Home"
@@ -17,7 +20,7 @@ export default function Projects() {
             className="h-auto w-[72px] sm:w-[80px]"
             priority
           />
-        </a>
+        </Link>
       </div>
 
       {/* Main content container */}
