@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",                
+    "build": "next build && next export",
     "lint": "eslint .",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"            
+    "predeploy": "npm run build && node -e \"require('fs').mkdirSync('out',{recursive:true}); require('fs').writeFileSync('out/.nojekyll','')\"",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "15.5.2",
@@ -19,7 +19,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
-    "@types/react": "^19", 
+    "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",

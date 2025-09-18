@@ -15,8 +15,8 @@ const nextConfig: NextConfig = {
   basePath: isProd ? `/${repo}` : "",
   assetPrefix: isProd ? `/${repo}/` : "",
 
-  // If you still hit lint build-blockers, you can temporarily uncomment:
-  // eslint: { ignoreDuringBuilds: true },
+
+  trailingSlash: true,
 };
 
 export default nextConfig;

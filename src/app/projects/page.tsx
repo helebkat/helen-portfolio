@@ -13,7 +13,7 @@ export default function Projects() {
       >
         <Link href="/" className="block hover:rotate-12 transition-transform duration-300">
           <Image
-            src="/flower home.png"
+            src="/flower-home.png"
             alt="Home"
             width={80}
             height={80}
@@ -213,7 +213,7 @@ export default function Projects() {
       {/* Star doodle in top right (hidden on mobile) */}
       <div className="hidden sm:block absolute right-2 top-4 sm:right-4 sm:top-6 md:right-6 md:top-8 z-10 pointer-events-none">
         <Image
-          src="/star 1.png"
+          src="/star-1.png"
           alt="Star doodle"
           width={200}
           height={200}
@@ -225,7 +225,7 @@ export default function Projects() {
       {/* Flower doodle in bottom left (hidden on mobile) */}
       <div className="hidden sm:block absolute -bottom-10 -left-10 z-10 pointer-events-none">
         <Image
-          src="/flower 2.png"
+          src="/flower-2.png"
           alt="Flower doodle"
           width={300}
           height={300}
@@ -236,3 +236,4 @@ export default function Projects() {
     </main>
   );
 }
+

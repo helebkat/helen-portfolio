@@ -19,4 +19,5 @@ export const darumadrop = Darumadrop_One({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-darumadrop",
+  display: "swap",
 });

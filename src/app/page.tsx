@@ -57,7 +57,7 @@ export default function Home() {
       {/* Flower — unchanged */}
       <div className="pointer-events-none absolute bottom-0 right-4 sm:right-40 z-10">
         <Image
-          src="/flower 1.png"
+          src="/flower-1.png"
           alt="flower doodle"
           width={300}
           height={300}

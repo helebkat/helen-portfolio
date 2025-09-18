@@ -13,7 +13,7 @@ export default function Resume() {
       >
         <Link href="/" className="block hover:rotate-12 transition-transform duration-300">
           <Image
-            src="/flower home.png"
+            src="/flower-home.png"
             alt="Home"
             width={60}
             height={60}
@@ -26,7 +26,7 @@ export default function Resume() {
       {/* Star doodle in top right (hidden on mobile) */}
       <div className="hidden sm:block absolute right-2 top-4 sm:right-4 sm:top-6 md:right-6 md:top-8 z-10 pointer-events-none">
         <Image
-          src="/star 1.png"
+          src="/star-1.png"
           alt="Star doodle"
           width={300}
           height={300}
@@ -227,7 +227,7 @@ export default function Resume() {
       {/* Flower doodle in bottom right (hidden on mobile) */}
       <div className="hidden sm:block absolute -bottom-10 -right-10 z-10 pointer-events-none">
         <Image
-          src="/flower 2.png"
+          src="/flower-2.png"
           alt="Flower doodle"
           width={400}
           height={400}

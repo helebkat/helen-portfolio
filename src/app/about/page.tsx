@@ -13,7 +13,7 @@ export default function About() {
       >
         <Link href="/" className="block hover:rotate-12 transition-transform duration-300">
           <Image
-            src="/flower home.png"
+            src="/flower-home.png"
             alt="Home"
             width={80}
             height={80}
