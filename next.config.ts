@@ -9,14 +9,22 @@ const nextConfig: NextConfig = {
   output: "export",
 
   // GitHub Pages can't run Next's Image Optimization
-  images: { unoptimized: true },
+  images: { 
+    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './src/app/imageLoader.ts'
+  },
 
   // Serve under /<repo> in production (required for GitHub Pages on a project repo)
   basePath: isProd ? `/${repo}` : "",
   assetPrefix: isProd ? `/${repo}/` : "",
 
-
   trailingSlash: true,
+  
+  // Ensure fonts are properly handled in static export
+  experimental: {
+    optimizeCss: true,
+  },
 };
 
 export default nextConfig;

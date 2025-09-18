@@ -212,9 +212,9 @@ export default function Projects() {
       {/* Decorative elements */}
       {/* Star doodle in top right (hidden on mobile) */}
       <div className="hidden sm:block absolute right-2 top-4 sm:right-4 sm:top-6 md:right-6 md:top-8 z-10 pointer-events-none">
-        <Image
-          src="/star-1.png"
-          alt="Star doodle"
+          <Image
+            src="/star-1.png"
+            alt="Star doodle"
           width={200}
           height={200}
           className="h-auto w-[80px] sm:w-[120px] md:w-[160px] opacity-60 rotate-12"
