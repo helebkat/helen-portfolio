@@ -10,10 +10,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${allison.variable} ${darumadrop.variable} ${inter.className} min-h-dvh`}
-      >
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${allison.variable} ${darumadrop.variable}`}
+    >
+      <body className={`${inter.className} min-h-dvh`}>
         {children}
       </body>
     </html>
