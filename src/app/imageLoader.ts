@@ -1,5 +1,5 @@
 // src/app/imageLoader.ts
-export default function imageLoader({ src, width, quality }: { src: string; width: number; quality?: number }) {
+export default function imageLoader({ src }: { src: string; width: number; quality?: number }) {
   const isProd = process.env.NODE_ENV === "production";
   const repo = "helen-portfolio";
   

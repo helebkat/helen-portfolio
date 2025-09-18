@@ -20,11 +20,6 @@ const nextConfig: NextConfig = {
   assetPrefix: isProd ? `/${repo}/` : "",
 
   trailingSlash: true,
-  
-  // Ensure fonts are properly handled in static export
-  experimental: {
-    optimizeCss: true,
-  },
 };
 
 export default nextConfig;
